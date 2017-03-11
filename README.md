@@ -11,7 +11,7 @@ XEP-0363 CLI upload tool
 2. Install Python dependencies (all Python versions)
 
         cd uploadr/
-        virtualenv python
+        virtualenv -p /usr/bin/python2.7 python
         . python/bin/activate
         pip install requests dnspython pyasn1 pyasn1_modules
 
@@ -54,4 +54,4 @@ You can put your credentials into ~/.uploadrc
 
 ## Example
 
-    $ ./upload.py --notify me@faraway.org burglar_cam_0001.jpg
+    $ ./uploadr.py --notify me@faraway.org burglar_cam_0001.jpg
